@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b3a">
+<title>VIRELUNEZ UNITY | Official</title>
+<meta name="description" content="Official website Virelunez Unity Roblox Community">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#06152e,#0b3972,#1263ae);
+  color:white;
+}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+
+header{
+  padding:20px 0;
+  background:#06152ee8;
+  border-bottom:1px solid #ffffff25;
+  position:sticky;top:0;z-index:10;
+}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-size:19px;font-weight:900;letter-spacing:2px}
+.logo span{color:#80c5ff}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{font-size:13px;color:#d9eaff}
+nav a:hover{color:#80c5ff}
+
+.hero{
+  min-height:440px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:70px 15px;
+}
+.label{
+  padding:9px 18px;
+  border:1px solid #ffffff55;
+  border-radius:30px;
+  font-size:12px;
+  letter-spacing:3px;
+  color:#c4e5ff;
+}
+.hero h1{
+  font-size:clamp(40px,8vw,75px);
+  margin:25px 0 15px;
+  font-weight:900;
+}
+.hero h1 span{color:#8bcaff}
+.hero p{
+  max-width:650px;
+  line-height:1.8;
+  color:#d5e8ff;
+}
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#fff,#a8d7ff);
+  color:#092d5b;
+  font-weight:bold;
+  margin-top:25px;
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-3px)}
+
+section{padding:65px 0}
+.heading{text-align:center;margin-bottom:35px}
+.heading small{color:#8bcaff;letter-spacing:3px;font-weight:bold}
+.heading h2{font-size:34px;margin:12px 0}
+.heading p{color:#c5dcf5;line-height:1.7}
+
+.maps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card{
+  background:#ffffff12;
+  border:1px solid #ffffff30;
+  border-radius:20px;
+  overflow:hidden;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-7px);background:#ffffff20}
+.card-image{
+  height:250px;
+  overflow:hidden;
+  background:#092c61;
+}
+.card-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+.card:hover .card-image img{transform:scale(1.05)}
+.card-content{padding:23px}
+.card-content small{
+  color:#8bcaff;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.card-content h3{margin:12px 0;font-size:21px}
+.card-content p{
+  color:#c5d9ef;
+  font-size:14px;
+  line-height:1.7;
+  min-height:70px;
+}
+.card .btn{width:100%;text-align:center}
+
+.links{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.link-card{
+  background:#ffffff12;
+  border:1px solid #ffffff30;
+  border-radius:13px;
+  padding:22px;
+  text-align:center;
+  font-weight:bold;
+  transition:.2s;
+}
+.link-card:hover{background:#ffffff28;transform:translateY(-3px)}
+.link-card span{display:block;font-size:25px;margin-bottom:10px}
+
+.about{
+  background:#ffffff10;
+  border:1px solid #ffffff30;
+  border-radius:20px;
+  padding:35px 20px;
+  text-align:center;
+}
+.about h2{margin:12px 0}
+.about p{color:#d1e4f9;line-height:1.8}
+
+footer{
+  border-top:1px solid #ffffff25;
+  text-align:center;
+  padding:30px 15px;
+  color:#b8d0e9;
+  font-size:13px;
+  line-height:2;
+}
+
+@media(max-width:800px){
+  .maps{grid-template-columns:1fr 1fr}
+  .links{grid-template-columns:1fr 1fr}
+}
+@media(max-width:550px){
+  nav{flex-direction:column}
+  nav ul{gap:13px;flex-wrap:wrap;justify-content:center}
+  .maps,.links{grid-template-columns:1fr}
+  .hero{min-height:400px}
+  .card-image{height:230px}
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="container">
+<nav>
+  <div class="logo">VIRELUNEZ <span>UNITY</span></div>
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#maps">MAPS</a></li>
+    <li><a href="#support">SUPPORT</a></li>
+    <li><a href="#social">SOCIAL</a></li>
+  </ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="label">✦ ROBLOX COMMUNITY ✦</div>
+  <h1>VIRELUNEZ <span>UNITY</span></h1>
+  <p>
+    One Unity, Three Worlds.<br>
+    Satu komunitas, tiga dunia, dan banyak cerita.
+    Mari bergabung dan ciptakan pengalaman seru bersama kami!
+  </p>
+  <a href="#maps" class="btn">EXPLORE OUR MAPS ↗</a>
+</section>
+
+<section id="maps">
+<div class="container">
+  <div class="heading">
+    <small>EXPLORE OUR WORLDS</small>
+    <h2>OUR ROBLOX MAPS</h2>
+    <p>Pilih dunia favoritmu dan mulai petualangan!</p>
+  </div>
+  <div class="maps">
+    <div class="card">
+      <div class="card-image">
+        <img src="images/kampoeng-pojok.jpg" alt="Kampoeng Pojok">
+      </div>
+      <div class="card-content">
+        <small>MAP 01 · SANTAI MUSIK</small>
+        <h3>KAMPOENG POJOK</h3>
+        <p>Tempat hangout, menikmati musik, menari, berfoto, dan bersenang-senang bersama teman.</p>
+        <a class="btn" target="_blank" rel="noopener"
+        href="https://www.roblox.com/share?code=f7ac702a24e9b34b9f02b6aaf77f33fe&amp;type=ExperienceDetails&amp;stamp=1794365438969">PLAY NOW ↗</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="images/mount-slow.jpg" alt="Mount Slow V2">
+      </div>
+      <div class="card-content">
+        <small>MAP 02 · HARD MAP</small>
+        <h3>MOUNT SLOW</h3>
+        <p>Tantang kemampuanmu melewati jalur pendakian dan raih puncak bersama teman-teman.</p>
+        <a class="btn" target="_blank" rel="noopener"
+        href="https://www.roblox.com/share?code=9492918a0bfecd44a9509cb77fccc88e&amp;type=ExperienceDetails&amp;stamp=1794365518947">PLAY NOW ↗</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="images/yustra-obstacle.jpg" alt="Yustra Obstacle">
+      </div>
+      <div class="card-content">
+        <small>MAP 03 · MAP HABUG</small>
+        <h3>YUSTRA OBSTACLE</h3>
+        <p>Hadapi berbagai rintangan dan uji ketangkasanmu sampai berhasil mencapai garis akhir.</p>
+        <a class="btn" target="_blank" rel="noopener"
+        href="https://www.roblox.com/share?code=08c57651ae645843906b480aeec26b4d&amp;type=ExperienceDetails&amp;stamp=1794365582764">PLAY NOW ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="support">
+<div class="container">
+  <div class="heading">
+    <small>SUPPORT OUR COMMUNITY</small>
+    <h2>SUPPORT VIRELUNEZ UNITY</h2>
+    <p>Dukunganmu membantu komunitas terus berkembang. Terima kasih!</p>
+  </div>
+  <div class="links">
+    <a class="link-card" target="_blank" rel="noopener" href="https://bagibagi.co/KampoengPojok"><span>💙</span>BAGIBAGI</a>
+    <a class="link-card" target="_blank" rel="noopener" href="https://sociabuzz.com/kampoengpojok"><span>💙</span>SOCIABUZZ</a>
+    <a class="link-card" target="_blank" rel="noopener" href="https://saweria.co/KampoengPojok"><span>💙</span>SAWERIA</a>
+  </div>
+</div>
+</section>
+
+<section id="social">
+<div class="container">
+  <div class="heading">
+    <small>CONNECT WITH US</small>
+    <h2>OFFICIAL SOCIAL MEDIA</h2>
+    <p>Ikuti media sosial dan bergabung bersama keluarga VIRELUNEZ UNITY.</p>
+  </div>
+  <div class="links">
+    <a class="link-card" target="_blank" rel="noopener" href="https://www.tiktok.com/@virelunezunity?_r=1&amp;_t=ZS-9BIxSclj8i4"><span>🎵</span>TIKTOK</a>
+    <a class="link-card" target="_blank" rel="noopener" href="https://discord.gg/yasCJaWuX"><span>💬</span>DISCORD</a>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="about">
+    <div class="label">STILL BREATHING; STILL RISING.</div>
+    <h2>VIRELUNEZ UNITY</h2>
+    <p>
+      One Community, Three Worlds, Endless Stories.<br>
+      Satu tempat untuk bertemu, bertumbuh, dan berbagi cerita.<br>
+      Hosted by VLZ UNITY.
+    </p>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+  <strong>VIRELUNEZ UNITY</strong><br>
+  © 2026 VIRELUNEZ UNITY. All Rights Reserved.<br>
+  Hosted by VLZ UNITY · Roblox Community
+</footer>
+</body>
+</html>
