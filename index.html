@@ -136,14 +136,80 @@ section{padding:65px 0}
 .link-card span{display:block;font-size:25px;margin-bottom:10px}
 
 .about{
-  background:#ffffff10;
-  border:1px solid #ffffff30;
-  border-radius:20px;
-  padding:35px 20px;
-  text-align:center;
+  max-width:900px;
+  margin:0 auto;
+  background:linear-gradient(145deg,rgba(8,30,67,.96),rgba(17,66,119,.92));
+  border:1px solid rgba(173,215,255,.28);
+  border-radius:24px;
+  padding:clamp(22px,4vw,46px);
+  text-align:left;
+  box-shadow:0 20px 55px rgba(0,0,0,.20);
 }
-.about h2{margin:12px 0}
-.about p{color:#d1e4f9;line-height:1.8}
+.about-intro{text-align:center;padding-bottom:26px}
+.about-kicker{
+  display:inline-block;
+  color:#a9d8ff;
+  border:1px solid rgba(169,216,255,.4);
+  border-radius:30px;
+  padding:7px 14px;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.about h2{margin:17px 0 10px;font-size:clamp(28px,5vw,42px)}
+.about-name{
+  color:#b9ddff;
+  font-family:Georgia,serif;
+  font-size:clamp(17px,3vw,23px);
+  font-weight:bold;
+  margin-bottom:12px;
+}
+.about-lead{color:#fff;font-size:16px;font-weight:bold;margin-bottom:16px}
+.about-quote{
+  max-width:650px;
+  margin:0 auto;
+  padding:20px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+}
+.about-quote p{color:#e3f0ff;line-height:1.9;font-size:14px}
+.about-quote .quote-line{color:#a9d8ff;font-weight:bold;text-align:center;margin-top:13px;font-style:italic}
+.about-block{
+  margin-top:22px;
+  padding:23px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:17px;
+}
+.about-block h3{
+  color:#a9d8ff;
+  font-size:16px;
+  letter-spacing:1.5px;
+  margin-bottom:13px;
+}
+.about-block p{
+  color:#dceaff;
+  font-size:14px;
+  line-height:1.85;
+  margin-top:10px;
+}
+.about-symbol{
+  color:#fff!important;
+  font-weight:bold;
+  margin-top:16px!important;
+}
+.about-ending{
+  text-align:center;
+  color:#b9ddff!important;
+  font-weight:bold;
+  margin-top:20px!important;
+}
+@media(max-width:550px){
+  .about{padding:20px 15px;border-radius:18px}
+  .about-block{padding:18px}
+  .about-quote{padding:16px}
+}
 
 footer{
   border-top:1px solid #ffffff25;
@@ -178,6 +244,7 @@ footer{
     <li><a href="#maps">MAPS</a></li>
     <li><a href="#support">SUPPORT</a></li>
     <li><a href="#social">SOCIAL</a></li>
+    <li><a href="#about">ABOUT US</a></li>
   </ul>
 </nav>
 </div>
@@ -276,14 +343,49 @@ footer{
 
 <section id="about">
 <div class="container">
+  <div class="heading">
+    <small>OUR IDENTITY &amp; STORY</small>
+    <h2>ABOUT US</h2>
+    <p>Mengenal makna dan nilai yang menjadi bagian dari VIRELUNEX UNITY.</p>
+  </div>
+
   <div class="about">
-    <div class="label">STILL BREATHING; STILL RISING.</div>
-    <h2>VIRELUNEZ UNITY</h2>
-    <p>
-      One Community, Three Worlds, Endless Stories.<br>
-      Satu tempat untuk bertemu, bertumbuh, dan berbagi cerita.<br>
-      Hosted by VLZ UNITY.
-    </p>
+    <div class="about-intro">
+      <span class="about-kicker">STILL BREATHING; STILL RISING.</span>
+      <h2>ABOUT US</h2>
+      <div class="about-name">─ 𝜗𝐕𝐈𝐑𝐄𝐋𝐔𝐍𝐄𝐗 𝐔𝐍𝐈𝐓𝐘𝜚 ─</div>
+      <p class="about-lead">Tempat untuk tetap bertahan dan terus berjalan.</p>
+      <div class="about-quote">
+        <p>
+          Seperti detak jantung, hidup berlanjut.<br>
+          Seperti titik koma (;), cerita belum selesai.<br>
+          Seperti kupu-kupu, kita berubah menjadi lebih kuat.<br>
+          Seperti bulan, kita tetap bersinar.
+        </p>
+        <p class="quote-line">✨ “In the dark, we still rise together.”</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>THE MEANING BEHIND OUR NAME</h3>
+      <p><strong>VIRELUNEX UNITY</strong> bukan sekadar nama sebuah komunitas, melainkan sebuah simbol perjalanan, kehidupan, perubahan, dan kebersamaan.</p>
+      <p>Kami percaya bahwa setiap orang memiliki cerita masing-masing. Ada perjalanan yang penuh kebahagiaan, ada masa yang mengajarkan kesabaran, dan ada pengalaman yang membuat kita tumbuh menjadi pribadi yang lebih kuat. Apa pun yang pernah terjadi, setiap cerita tetap memiliki kesempatan untuk berlanjut.</p>
+      <p class="about-symbol">DETAK JANTUNG — Simbol kehidupan dan semangat.</p>
+      <p>Detak jantung melambangkan kehidupan dan semangat untuk terus melangkah. Selama masih ada kehidupan, selalu ada alasan untuk bertahan, berkembang, dan menciptakan sesuatu yang berarti.</p>
+      <p class="about-symbol">TITIK KOMA (;) — Simbol cerita yang belum selesai.</p>
+      <p>Titik koma menjadi simbol bahwa sebuah cerita tidak harus berakhir hanya karena perjalanan terasa sulit. Masih ada halaman berikutnya, kesempatan baru, dan kisah yang belum sempat dituliskan. Kita mungkin pernah berhenti sejenak, tetapi bukan berarti perjalanan harus selesai.</p>
+      <p class="about-symbol">KUPU-KUPU — Simbol perubahan dan pertumbuhan.</p>
+      <p>Kupu-kupu melambangkan perubahan dan pertumbuhan. Setiap proses membutuhkan waktu, dan setiap perubahan memiliki maknanya sendiri. Kita belajar dari masa lalu, menerima proses, dan tumbuh menjadi versi yang lebih kuat dari sebelumnya.</p>
+      <p class="about-symbol">BULAN — Simbol harapan dan cahaya.</p>
+      <p>Bulan melambangkan harapan dan cahaya. Bahkan ketika malam terasa gelap, bulan tetap hadir dengan sinarnya. Begitu pula kita, tidak harus selalu menjadi yang paling terang untuk tetap memiliki arti.</p>
+    </div>
+
+    <div class="about-block">
+      <h3>OUR UNITY</h3>
+      <p>Di VIRELUNEX UNITY, kami ingin membangun lebih dari sekadar komunitas. Kami ingin menciptakan tempat untuk bertemu, berbagi cerita, membangun persahabatan, saling menghargai, dan tumbuh bersama tanpa memandang perbedaan.</p>
+      <p>Karena pada akhirnya, yang membuat sebuah komunitas tetap hidup bukan hanya nama atau jumlah anggotanya, melainkan orang-orang di dalamnya, kenangan yang tercipta, serta kebersamaan yang terus dijaga.</p>
+      <p class="about-ending">Our story is not over. We are still breathing, still growing, and still rising together.</p>
+    </div>
   </div>
 </div>
 </section>
@@ -296,43 +398,3 @@ footer{
 </footer>
 </body>
 </html>
-<section id="about-us">
-  <h1>ABOUT US</h1>
-
-  <h2>─ 𝜗𝐕𝐈𝐑𝐄𝐋𝐔𝐍𝐄𝐗 𝐔𝐍𝐈𝐓𝐘𝜚 ─</h2>
-
-  <p>Tempat untuk tetap bertahan dan terus berjalan.</p>
-
-  <p>Seperti detak jantung, hidup berlanjut.</p>
-  <p>Seperti titik koma (;), cerita belum selesai.</p>
-  <p>Seperti kupu-kupu, kita berubah menjadi lebih kuat.</p>
-  <p>Seperti bulan, kita tetap bersinar.</p>
-
-  <p>✨ “In the dark, we still rise together.”</p>
-
-  <h3>THE MEANING BEHIND OUR NAME</h3>
-
-  THE MEANING BEHIND OUR NAME
-
-VIRELUNEX UNITY bukan sekadar nama sebuah komunitas, melainkan sebuah simbol perjalanan, kehidupan, perubahan, dan kebersamaan.
-
-Kami percaya bahwa setiap orang memiliki cerita masing-masing. Ada perjalanan yang penuh kebahagiaan, ada masa yang mengajarkan kesabaran, dan ada pengalaman yang membuat kita tumbuh menjadi pribadi yang lebih kuat. Apa pun yang pernah terjadi, setiap cerita tetap memiliki kesempatan untuk berlanjut.
-
-Detak jantung melambangkan kehidupan dan semangat untuk terus melangkah. Selama masih ada kehidupan, selalu ada alasan untuk bertahan, berkembang, dan menciptakan sesuatu yang berarti.
-
-Titik koma (;) menjadi simbol bahwa sebuah cerita tidak harus berakhir hanya karena perjalanan terasa sulit. Masih ada halaman berikutnya, kesempatan baru, dan kisah yang belum sempat dituliskan. Kita mungkin pernah berhenti sejenak, tetapi bukan berarti perjalanan harus selesai.
-
-Kupu-kupu melambangkan perubahan dan pertumbuhan. Setiap proses membutuhkan waktu, dan setiap perubahan memiliki maknanya sendiri. Kita belajar dari masa lalu, menerima proses, dan tumbuh menjadi versi yang lebih kuat dari sebelumnya.
-
-Bulan melambangkan harapan dan cahaya. Bahkan ketika malam terasa gelap, bulan tetap hadir dengan sinarnya. Begitu pula kita, tidak harus selalu menjadi yang paling terang untuk tetap memiliki arti.<!-- Masukkan seluruh penjelasan makna di sini -->
-
-  <h3>OUR UNITY</h3>
-
-  OUR UNITY
-
-Di VIRELUNEX UNITY, kami ingin membangun lebih dari sekadar komunitas. Kami ingin menciptakan tempat untuk bertemu, berbagi cerita, membangun persahabatan, saling menghargai, dan tumbuh bersama tanpa memandang perbedaan.
-
-Karena pada akhirnya, yang membuat sebuah komunitas tetap hidup bukan hanya nama atau jumlah anggotanya, melainkan orang-orang di dalamnya, kenangan yang tercipta, serta kebersamaan yang terus dijaga.
-
-Our story is not over. We are still breathing, still growing, and still rising together.<!-- Masukkan penjelasan OUR UNITY di sini -->
-</section>
